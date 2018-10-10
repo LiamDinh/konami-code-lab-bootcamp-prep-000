@@ -15,10 +15,11 @@ let index = 0;
 
 function init() {
   // your code here
-  function onKeyDownHandler(e) {
-  const key = e.key;
- 
-  if (key === codes[index]) {
+   // your code herelet index = 0; 
+  let index = 0;
+  document.addEventListener('keydown', function(e) {
+    const key = e.key; 
+    if (key === codes[index]) {
     index++;
  
     if (index === codes.length) {
@@ -30,5 +31,5 @@ function init() {
     index = 0;
   //  alert("Wrong Codes!")
   }
-}
+  })
 }
